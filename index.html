@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamVista - Explore Your Dreams</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>🌙 DreamVista</h1>
+    <p>Unlock the meaning behind your dreams</p>
+  </header>
+
+  <!-- NAV: use routes that exist in app.py -->
+  <nav class="menu">
+    <a href="{{ url_for('home') }}">Interpret</a>
+    <a href="{{ url_for('add_symbol') }}">Add Symbol</a>
+    <a href="{{ url_for('stats') }}">Stats</a>
+    <a href="{{ url_for('search') }}">Search</a>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <h2>Interpret a Dream</h2>
+      <p>Describe your dream and see which symbols match.</p>
+    </section>
+
+    <section class="interpret-card">
+      <form action="{{ url_for('interpret') }}" method="POST">
+        <textarea name="dream" rows="5" placeholder="Describe your dream...">{{ dream_text or '' }}</textarea>
+        <button class="btn primary" type="submit">✨ Interpret Dream</button>
+      </form>
+
+      {% if results %}
+      <div class="results">
+        <h3>Interpretation Results</h3>
+        {% for r in results %}
+        <div class="result">
+          <div class="result-header">
+            <strong>{{ r.symbol.symbol | capitalize }}</strong>
+            <span class="tone">{{ r.symbol.emotional_tone }}</span>
+          </div>
+          <p class="meaning">{{ r.symbol.meaning }}</p>
+          <div class="relevance">Relevance: {{ r.relevance }}</div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </section>
+
+    <section class="features">
+      <div class="feature-card">
+        <h3>➕ Add Symbol</h3>
+        <p>Contribute a new dream symbol to the database.</p>
+        <a href="{{ url_for('add_symbol') }}" class="btn">Add Now</a>
+      </div>
+
+      <div class="feature-card">
+        <h3>📊 Stats</h3>
+        <p>See most common symbols and emotional tone distribution.</p>
+        <a href="{{ url_for('stats') }}" class="btn">View Stats</a>
+      </div>
+
+      <div class="feature-card">
+        <h3>🔍 Search</h3>
+        <p>Find saved dreams by symbol quickly.</p>
+        <a href="{{ url_for('search') }}" class="btn">Search Dreams</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 DreamVista | Made with Santhoshkumar S ❤️ in Python Flask</p>
+  </footer>
+</body>
+</html>

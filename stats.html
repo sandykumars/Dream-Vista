@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stats - DreamVista</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>🌙 DreamVista</h1>
+    <p>Statistics & Insights</p>
+  </header>
+
+  <nav class="menu">
+    <a href="{{ url_for('home') }}">Interpret</a>
+    <a href="{{ url_for('add_symbol') }}">Add Symbol</a>
+    <a href="{{ url_for('stats') }}" class="active">Stats</a>
+    <a href="{{ url_for('search') }}">Search</a>
+  </nav>
+
+  <main>
+    <section class="card centered">
+      <h2>📈 Dream Statistics</h2>
+      <p>Total Dreams Recorded: <strong>{{ stats.total_dreams }}</strong></p>
+
+      <h3>Most Common Symbols</h3>
+      <ul>
+        {% if stats.common_symbols %}
+          {% for s in stats.common_symbols %}
+            <li>{{ s.symbol }} — {{ s.frequency }} times</li>
+          {% endfor %}
+        {% else %}
+          <li>No recorded symbols yet.</li>
+        {% endif %}
+      </ul>
+
+      <h3>Emotional Tone Distribution</h3>
+      <div id="chart-wrap">
+        <canvas id="toneChart" width="400" height="300"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 DreamVista</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const stats = {{ stats | tojson }};
+    if (stats && stats.emotional_tones && stats.emotional_tones.length) {
+      const labels = stats.emotional_tones.map(t => t.emotional_tone);
+      const data = stats.emotional_tones.map(t => t.count);
+      const ctx = document.getElementById('toneChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: labels,
+          datasets: [{
+            data: data
+          }]
+        }
+      });
+    }
+  </script>
+</body>
+</html>

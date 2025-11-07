@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Search - DreamVista</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>🌙 DreamVista</h1>
+    <p>Search dreams by symbol</p>
+  </header>
+
+  <nav class="menu">
+    <a href="{{ url_for('home') }}">Interpret</a>
+    <a href="{{ url_for('add_symbol') }}">Add Symbol</a>
+    <a href="{{ url_for('stats') }}">Stats</a>
+    <a href="{{ url_for('search') }}" class="active">Search</a>
+  </nav>
+
+  <main>
+    <section class="card centered">
+      <form method="POST">
+        <input type="text" name="symbol" placeholder="Enter symbol (e.g., water)" value="{{ symbol or '' }}">
+        <button class="btn primary" type="submit">Search</button>
+      </form>
+
+      {% if dreams is not none %}
+        <hr>
+        <h3>Results for "{{ symbol }}"</h3>
+        {% if dreams %}
+          {% for d in dreams %}
+            <div class="dream-item">
+              <div><strong>Date:</strong> {{ d.dream_date }}</div>
+              <div><strong>Dream:</strong> {{ d.dream_text }}</div>
+              <div><strong>Meaning:</strong> {{ d.meaning }}</div>
+              <hr>
+            </div>
+          {% endfor %}
+        {% else %}
+          <p>No dreams found for "{{ symbol }}".</p>
+        {% endif %}
+      {% endif %}
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 DreamVista</p>
+  </footer>
+</body>
+</html>

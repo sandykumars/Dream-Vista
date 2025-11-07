@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Add Symbol - DreamVista</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>🌙 DreamVista</h1>
+    <p>Add a new dream symbol</p>
+  </header>
+
+  <nav class="menu">
+    <a href="{{ url_for('home') }}">Interpret</a>
+    <a href="{{ url_for('add_symbol') }}" class="active">Add Symbol</a>
+    <a href="{{ url_for('stats') }}">Stats</a>
+    <a href="{{ url_for('search') }}">Search</a>
+  </nav>
+
+  <main>
+    <section class="card centered">
+      <form method="POST">
+        <label>Symbol name *</label>
+        <input type="text" name="symbol" placeholder="e.g., dragon" required>
+
+        <label>Meaning *</label>
+        <textarea name="meaning" rows="3" placeholder="Meaning of the symbol" required></textarea>
+
+        <label>Emotional tone</label>
+        <input type="text" name="tone" placeholder="e.g., mysterious">
+
+        <label>Category</label>
+        <input type="text" name="category" placeholder="e.g., animal, nature">
+
+        <label>Keywords (comma-separated)</label>
+        <input type="text" name="keywords" placeholder="e.g., serpent, fire, wings">
+
+        <button class="btn primary" type="submit">Add Symbol</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 DreamVista</p>
+  </footer>
+</body>
+</html>
