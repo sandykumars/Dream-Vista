@@ -1,0 +1,332 @@
+{
+  "symbols": [
+    {
+      "id": 1,
+      "symbol": "flying",
+      "meaning": "Freedom, ambition, desire to escape limitations, spiritual elevation",
+      "emotional_tone": "positive",
+      "category": "movement",
+      "keywords": "soar, float, levitate, air, wings"
+    },
+    {
+      "id": 2,
+      "symbol": "falling",
+      "meaning": "Loss of control, anxiety, insecurity, fear of failure",
+      "emotional_tone": "negative",
+      "category": "movement",
+      "keywords": "drop, plunge, descend, crash"
+    },
+    {
+      "id": 3,
+      "symbol": "water",
+      "meaning": "Emotions, unconscious mind, purification, life force",
+      "emotional_tone": "neutral",
+      "category": "nature",
+      "keywords": "ocean, sea, river, rain, flood, swimming"
+    },
+    {
+      "id": 4,
+      "symbol": "fire",
+      "meaning": "Passion, transformation, anger, destruction, purification",
+      "emotional_tone": "intense",
+      "category": "element",
+      "keywords": "flames, burning, heat, smoke, blaze"
+    },
+    {
+      "id": 5,
+      "symbol": "death",
+      "meaning": "Transformation, ending, new beginning, fear of change",
+      "emotional_tone": "transformative",
+      "category": "life",
+      "keywords": "dying, funeral, corpse, grave"
+    },
+    {
+      "id": 6,
+      "symbol": "snake",
+      "meaning": "Transformation, healing, hidden fears, temptation, wisdom",
+      "emotional_tone": "mysterious",
+      "category": "animal",
+      "keywords": "serpent, reptile, viper, python"
+    },
+    {
+      "id": 7,
+      "symbol": "teeth falling out",
+      "meaning": "Anxiety, powerlessness, aging, communication issues",
+      "emotional_tone": "anxious",
+      "category": "body",
+      "keywords": "tooth, dental, losing teeth, mouth"
+    },
+    {
+      "id": 8,
+      "symbol": "chase",
+      "meaning": "Avoidance, running from problems, fear, anxiety",
+      "emotional_tone": "stressful",
+      "category": "action",
+      "keywords": "pursued, running, escape, hunted"
+    },
+    {
+      "id": 9,
+      "symbol": "naked in public",
+      "meaning": "Vulnerability, fear of exposure, authenticity, shame",
+      "emotional_tone": "vulnerable",
+      "category": "social",
+      "keywords": "nude, exposed, undressed, bare"
+    },
+    {
+      "id": 10,
+      "symbol": "exam or test",
+      "meaning": "Performance anxiety, feeling unprepared, self-judgment",
+      "emotional_tone": "anxious",
+      "category": "achievement",
+      "keywords": "test, school, unprepared, studying"
+    },
+    {
+      "id": 11,
+      "symbol": "house",
+      "meaning": "Self, psyche, different aspects of personality, security",
+      "emotional_tone": "neutral",
+      "category": "structure",
+      "keywords": "home, building, room, mansion"
+    },
+    {
+      "id": 12,
+      "symbol": "car",
+      "meaning": "Direction in life, control, ambition, journey",
+      "emotional_tone": "neutral",
+      "category": "vehicle",
+      "keywords": "driving, vehicle, automobile, road"
+    },
+    {
+      "id": 13,
+      "symbol": "baby",
+      "meaning": "New beginnings, vulnerability, potential, responsibility",
+      "emotional_tone": "positive",
+      "category": "life",
+      "keywords": "infant, child, newborn, pregnancy"
+    },
+    {
+      "id": 14,
+      "symbol": "cat",
+      "meaning": "Independence, intuition, femininity, mystery",
+      "emotional_tone": "neutral",
+      "category": "animal",
+      "keywords": "kitten, feline, kitty"
+    },
+    {
+      "id": 15,
+      "symbol": "dog",
+      "meaning": "Loyalty, friendship, protection, instinct",
+      "emotional_tone": "positive",
+      "category": "animal",
+      "keywords": "puppy, canine, pet"
+    },
+    {
+      "id": 16,
+      "symbol": "spider",
+      "meaning": "Creativity, feminine energy, feeling trapped, patience",
+      "emotional_tone": "mysterious",
+      "category": "animal",
+      "keywords": "web, arachnid, insect"
+    },
+    {
+      "id": 17,
+      "symbol": "mountain",
+      "meaning": "Challenge, achievement, obstacle, spiritual journey",
+      "emotional_tone": "challenging",
+      "category": "nature",
+      "keywords": "climb, peak, hill, summit"
+    },
+    {
+      "id": 18,
+      "symbol": "bridge",
+      "meaning": "Transition, connection, decision, moving forward",
+      "emotional_tone": "transitional",
+      "category": "structure",
+      "keywords": "crossing, connect, span"
+    },
+    {
+      "id": 19,
+      "symbol": "mirror",
+      "meaning": "Self-reflection, truth, identity, vanity",
+      "emotional_tone": "reflective",
+      "category": "object",
+      "keywords": "reflection, looking glass"
+    },
+    {
+      "id": 20,
+      "symbol": "money",
+      "meaning": "Value, self-worth, power, security, opportunity",
+      "emotional_tone": "neutral",
+      "category": "material",
+      "keywords": "cash, wealth, coins, currency"
+    }
+  ],
+  "dreams": [
+    {
+      "id": 1,
+      "dream_text": "falling\n",
+      "dream_date": "2025-11-06",
+      "mood_before": null,
+      "recurring": false,
+      "created_at": "2025-11-06 21:22:15"
+    },
+    {
+      "id": 2,
+      "dream_text": "falling\nflying\n",
+      "dream_date": "2025-11-06",
+      "mood_before": null,
+      "recurring": false,
+      "created_at": "2025-11-06 21:22:24"
+    },
+    {
+      "id": 3,
+      "dream_text": "falling\r\n",
+      "dream_date": "2025-11-07",
+      "mood_before": null,
+      "recurring": false,
+      "created_at": "2025-11-07 13:11:54"
+    },
+    {
+      "id": 4,
+      "dream_text": "falling\r\n",
+      "dream_date": "2025-11-07",
+      "mood_before": null,
+      "recurring": false,
+      "created_at": "2025-11-07 13:14:19"
+    },
+    {
+      "id": 5,
+      "dream_text": "falling\r\n",
+      "dream_date": "2025-11-07",
+      "mood_before": null,
+      "recurring": false,
+      "created_at": "2025-11-07 13:14:22"
+    },
+    {
+      "id": 6,
+      "dream_text": "water\r\n",
+      "dream_date": "2025-11-07",
+      "mood_before": null,
+      "recurring": false,
+      "created_at": "2025-11-07 13:14:31"
+    },
+    {
+      "id": 7,
+      "dream_text": "falling\r\nflying\r\nwater\r\nfire",
+      "dream_date": "2025-11-07",
+      "mood_before": null,
+      "recurring": false,
+      "created_at": "2025-11-07 13:14:45"
+    },
+    {
+      "id": 8,
+      "dream_text": "falling\r\n",
+      "dream_date": "2025-11-07",
+      "mood_before": null,
+      "recurring": false,
+      "created_at": "2025-11-07 14:26:56"
+    },
+    {
+      "id": 9,
+      "dream_text": "flying",
+      "dream_date": "2025-11-07",
+      "mood_before": null,
+      "recurring": false,
+      "created_at": "2025-11-07 14:32:26"
+    },
+    {
+      "id": 10,
+      "dream_text": "falling\r\n",
+      "dream_date": "2025-11-07",
+      "mood_before": null,
+      "recurring": false,
+      "created_at": "2025-11-07 14:45:36"
+    }
+  ],
+  "interpretations": [
+    {
+      "id": 1,
+      "dream_id": 1,
+      "symbol_id": 2,
+      "relevance_score": 10
+    },
+    {
+      "id": 2,
+      "dream_id": 2,
+      "symbol_id": 1,
+      "relevance_score": 10
+    },
+    {
+      "id": 3,
+      "dream_id": 2,
+      "symbol_id": 2,
+      "relevance_score": 10
+    },
+    {
+      "id": 4,
+      "dream_id": 3,
+      "symbol_id": 2,
+      "relevance_score": 10
+    },
+    {
+      "id": 5,
+      "dream_id": 4,
+      "symbol_id": 2,
+      "relevance_score": 10
+    },
+    {
+      "id": 6,
+      "dream_id": 5,
+      "symbol_id": 2,
+      "relevance_score": 10
+    },
+    {
+      "id": 7,
+      "dream_id": 6,
+      "symbol_id": 3,
+      "relevance_score": 10
+    },
+    {
+      "id": 8,
+      "dream_id": 7,
+      "symbol_id": 1,
+      "relevance_score": 10
+    },
+    {
+      "id": 9,
+      "dream_id": 7,
+      "symbol_id": 2,
+      "relevance_score": 10
+    },
+    {
+      "id": 10,
+      "dream_id": 7,
+      "symbol_id": 3,
+      "relevance_score": 10
+    },
+    {
+      "id": 11,
+      "dream_id": 7,
+      "symbol_id": 4,
+      "relevance_score": 10
+    },
+    {
+      "id": 12,
+      "dream_id": 8,
+      "symbol_id": 2,
+      "relevance_score": 10
+    },
+    {
+      "id": 13,
+      "dream_id": 9,
+      "symbol_id": 1,
+      "relevance_score": 10
+    },
+    {
+      "id": 14,
+      "dream_id": 10,
+      "symbol_id": 2,
+      "relevance_score": 10
+    }
+  ]
+}
